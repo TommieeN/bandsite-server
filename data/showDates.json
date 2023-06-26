@@ -1,0 +1,38 @@
+[
+    {
+    "id": "e20c30cd-71b0-401c-8045-34d0d79a0808",
+    "date": 1630900800000,
+    "place": "Ronald Lane",
+    "location": "San Francisco, CA"
+    },
+    {
+    "id": "578e71bb-0ed2-4fbc-bc1d-5bf1568c53ac",
+    "date": 1632196800000,
+    "place": "Pier 3 East",
+    "location": "San Francisco, CA"
+    },
+    {
+    "id": "679d860b-48ae-4bf0-90cc-ce755496938f",
+    "date": 1634270400000,
+    "place": "View Lounge",
+    "location": "San Francisco, CA"
+    },
+    {
+    "id": "a495046a-b012-49f4-ade5-b2269d48170c",
+    "date": 1636171200000,
+    "place": "Hyatt Agency",
+    "location": "San Francisco, CA"
+    },
+    {
+    "id": "af3f836e-749f-4eb4-8535-bb360fcf9963",
+    "date": 1637902800000,
+    "place": "Moscow Center",
+    "location": "San Francisco, CA"
+    },
+    {
+    "id": "a55dcb0c-01b6-4d64-967b-36f032c266a7",
+    "date": 1639544400000,
+    "place": "Press Club",
+    "location": "San Francisco, CA"
+    }
+    ]
