@@ -1,5 +1,6 @@
 const express = require("express")
 const fs = require("fs")
+const { v4: uuid } = require("uuid");
 
 const router = express.Router()
 
@@ -10,7 +11,7 @@ const readAndParseData = () => {
   return JSON.parse(data); 
 }
 
-router.route("/").get((req, res) => {
+router.route("/comments").get((req, res) => {
     try {
         const commentData = readAndParseData().map((comment) => {
             return {
@@ -21,6 +22,25 @@ router.route("/").get((req, res) => {
                 timestamp: comment.timestamp
             }
         })
+        res.json(commentData)
+    } catch (error) {
+        res.status(500).send("Server error")
+    }
+})
+
+router.route("/comments").post((req, res) => {
+    try {
+        const { name, comment } = req.body
+        const commentData = readAndParseData()
+        const newComment = {
+            comment,
+            id: uuid(),
+            likes: 0,
+            name,
+            timestamp: Date.now(),
+        };
+        commentData.push(newComment)
+        fs.writeFileSync("./data/comments.json", JSON.stringify(commentData))
         res.json(commentData)
     } catch (error) {
         res.status(500).send("Server error")
