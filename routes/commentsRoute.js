@@ -1,8 +1,8 @@
 const express = require("express")
 const fs = require("fs")
 const { v4: uuid } = require("uuid");
-
 const router = express.Router()
+// const { readAndParseData } = require("../util/index.js")
 
 router.use(express.json())
 
@@ -11,6 +11,7 @@ const readAndParseData = () => {
   return JSON.parse(data); 
 }
 
+// ROUTE TO GET COMMENTS DATA
 router.route("/comments").get((req, res) => {
     try {
         const commentData = readAndParseData().map((comment) => {
@@ -28,6 +29,7 @@ router.route("/comments").get((req, res) => {
     }
 })
 
+// ROUTE TO POST COMMENTS
 router.route("/comments").post((req, res) => {
     try {
         const { name, comment } = req.body
