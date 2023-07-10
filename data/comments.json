@@ -19,26 +19,5 @@
     "id": "1b759bf0-47f8-4dbd-aa8b-0c235ae8d270",
     "likes": 0,
     "timestamp": 1608440400000
-  },
-  {
-    "comment": "Hello",
-    "id": "5af10366-32f1-4b40-b350-bfe082b01f30",
-    "likes": 0,
-    "name": "Tommy",
-    "timestamp": 1688530429657
-  },
-  {
-    "comment": "leaf attack",
-    "id": "357a55b4-8004-4922-bc15-155602833ad3",
-    "likes": 0,
-    "name": "bulbasaur",
-    "timestamp": 1688530898253
-  },
-  {
-    "comment": "t",
-    "id": "40155822-7f5e-494b-a61a-b6c11c1ff843",
-    "likes": 0,
-    "name": "bulbasaur",
-    "timestamp": 1688530962952
   }
 ]
